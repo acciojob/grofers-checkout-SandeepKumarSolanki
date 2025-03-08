@@ -18,12 +18,12 @@ const getSum = () => {
 
 
 getSumBtn.addEventListener("click", () => {
-	let ans = document.getElementById('ans')	
-  let ans = getSum(); 
+	
+  let totalPrice = getSum(); 
 
   let table = document.querySelector('table');
   let newRow = table.insertRow();
   let cell = newRow.insertCell();
   cell.colSpan = 2; 
-  cell.innerText = `Total Price: ₹${ans}`; 
+  cell.innerText = `Total Price: ₹${totalPrice}`; 
 });
