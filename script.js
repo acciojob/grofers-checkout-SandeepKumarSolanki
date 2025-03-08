@@ -6,11 +6,13 @@ document.body.appendChild(getSumBtn);
 
 const getSum = () => {
 //Add your code here
-	let prices = document.querySelectorAll('.price')
 	let totalSum = 0;
-	prices.forEach((price)=>{
-		totalSum += price;
-	})
+	let numRows = document.querySelector('td').childNode;
+	for(let i=0 ; i<numRows ; i++){
+		let col = document.getElementsByClassName('prices');
+		colValue = col.innerText;
+		totalSum += colValue;
+	}
 	return totalSum;
 };
 
